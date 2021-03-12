@@ -3,7 +3,7 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
-  --main-color: #fff;
+  --main-color: #ffffff;
   --second-color: #000;
   --title-color: #212121;
   --link-color: #757575;
@@ -13,6 +13,7 @@
   --contact-info-conection-color: rgba(255, 255, 255, 0.6);
   --line-color: #ececec;
   --work-categories-color: #eeeeee;
+  --border-color: #afb1b8;
   --section-pt: 94px;
   --section-pb: 94px;
 }
@@ -171,6 +172,8 @@ img {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -178,13 +181,26 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--link-color);
+  fill: var(--link-color);
+}
+
+.envelope-img {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.smartphone-img {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-
 /*========END HEADER========*/
 
 /*========FOOTER========*/
@@ -235,8 +251,6 @@ img {
   color: var(--main-color);
   max-width: 696px;
   margin: 0 auto;
-  /*padding-right: 252px;
-  padding-left: 252px;*/
   margin-bottom: 30px;
 }
 
@@ -244,6 +258,11 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: url(/img/bg.jpg),
+    linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*========END HERO========*/
 
@@ -253,6 +272,20 @@ img {
   padding-bottom: 47px;
 }
 
+.advantage-img {
+  width: 70px;
+  height: 70px;
+}
+
+.advantage-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-color);
+  margin-bottom: 30px;
+}
 .advantage-list {
   display: flex;
   margin-left: -30px;
@@ -349,6 +382,81 @@ img {
   padding-bottom: 30px;
 }
 /*========END TEAM========*/
+
+/*========REGULAR CUSTOMERS========*/
+.regular-customers {
+  margin-bottom: 50px;
+}
+
+.regular-customers-list {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.regular-customers-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+.first-company-img {
+  width: 45px;
+  height: 49px;
+  fill: var(--border-color);
+}
+
+.second-company-img {
+  width: 40px;
+  height: 52px;
+  fill: var(--border-color);
+}
+
+.third-company-img {
+  width: 41px;
+  height: 43px;
+  fill: var(--border-color);
+}
+
+.fourth-company-img {
+  width: 80px;
+  height: 42px;
+  fill: var(--border-color);
+}
+
+.fifth-company-img {
+  width: 59px;
+  height: 47px;
+  fill: var(--border-color);
+}
+
+.sixth-company-img {
+  width: 88px;
+  height: 45px;
+  fill: var(--border-color);
+}
+
+.customers-link:hover .cust-img,
+.customers-link:focus .cust-img {
+  fill: var(--accent-color);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--accent-color);
+}
+/*========END REGULAR CUSTOMERS========*/
+
 /*================END STUDIO================*/
 
 /*================PORTFOLIO================*/
@@ -427,5 +535,10 @@ img {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+}
+
+.work-categories-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*========END WORK CATEGORIES========*/
