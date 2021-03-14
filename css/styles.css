@@ -101,6 +101,38 @@ img {
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
 }
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--border-color);
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:focus .social-list-icon,
+.social-list-link:hover .social-list-icon {
+  fill: var(--main-color);
+}
 /*========HEADER========*/
 .header {
   border-bottom: var(--line-color) solid 1px;
@@ -185,14 +217,14 @@ img {
 }
 
 .envelope-img {
-  width: 10px;
-  height: 16px;
+  width: 16px;
+  height: 12px;
   margin-right: 10px;
 }
 
 .smartphone-img {
-  width: 16px;
-  height: 12px;
+  width: 12px;
+  height: 16px;
   margin-right: 10px;
 }
 
@@ -204,6 +236,18 @@ img {
 /*========END HEADER========*/
 
 /*========FOOTER========*/
+.footer {
+  background: var(--background-section-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  display: block;
+  padding: 0;
+}
+
 .contact-info-location {
   font-size: 14px;
   line-height: 1.71;
@@ -222,15 +266,32 @@ img {
   margin-bottom: 9px;
 }
 
-.footer {
-  background: var(--background-section-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer-elements {
+  display: flex;
 }
 
-.footer-logo {
-  margin-bottom: 20px;
+.footer-container {
+  padding-top: 12px;
+  margin-left: 70px;
+  min-width: 208px;
+}
+
+.social-title {
   display: block;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: var(--main-color);
 }
 /*========END FOOTER========*/
 /*================END COMMON STYLES================*/
@@ -375,11 +436,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--link-color);
+  margin-bottom: 16px;
 }
 
 .team-subscribe {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 /*========END TEAM========*/
 
@@ -410,39 +471,8 @@ img {
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
-.first-company-img {
-  width: 45px;
-  height: 49px;
-  fill: var(--border-color);
-}
 
-.second-company-img {
-  width: 40px;
-  height: 52px;
-  fill: var(--border-color);
-}
-
-.third-company-img {
-  width: 41px;
-  height: 43px;
-  fill: var(--border-color);
-}
-
-.fourth-company-img {
-  width: 80px;
-  height: 42px;
-  fill: var(--border-color);
-}
-
-.fifth-company-img {
-  width: 59px;
-  height: 47px;
-  fill: var(--border-color);
-}
-
-.sixth-company-img {
-  width: 88px;
-  height: 45px;
+.cust-img {
   fill: var(--border-color);
 }
 
@@ -486,6 +516,11 @@ img {
   color: var(--main-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-all {
+  color: var(--main-color);
+  background-color: var(--accent-color);
 }
 
 .filter-buttons-menu {
