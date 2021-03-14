@@ -268,12 +268,16 @@ img {
 
 .footer-elements {
   display: flex;
+  align-items: baseline;
 }
 
-.footer-container {
-  padding-top: 12px;
-  margin-left: 70px;
+.address-container {
+  margin-right: 70px;
   min-width: 208px;
+}
+
+.social-container {
+  min-width: 206px;
 }
 
 .social-title {
