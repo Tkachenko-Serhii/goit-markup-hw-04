@@ -196,8 +196,8 @@ img {
   margin-left: auto;
 }
 
-.contacts-item-tel {
-  margin-left: 50px;
+.contacts-item-mail {
+  margin-right: 50px;
 }
 
 .contacts-link {
@@ -331,11 +331,6 @@ img {
 .advantage {
   padding-top: 94px;
   padding-bottom: 47px;
-}
-
-.advantage-img {
-  width: 70px;
-  height: 70px;
 }
 
 .advantage-img-box {
