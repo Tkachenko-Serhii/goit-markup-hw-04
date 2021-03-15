@@ -108,8 +108,6 @@ img {
 }
 
 .social-list-icon {
-  width: 20px;
-  height: 20px;
   fill: var(--border-color);
 }
 
@@ -272,7 +270,6 @@ img {
 
 .address-container {
   margin-right: 70px;
-  min-width: 208px;
 }
 
 .social-container {
