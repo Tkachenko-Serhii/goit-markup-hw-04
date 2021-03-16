@@ -344,6 +344,7 @@ img {
   background-color: var(--background-color);
   margin-bottom: 30px;
 }
+
 .advantage-list {
   display: flex;
   flex-wrap: wrap;
